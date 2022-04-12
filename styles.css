@@ -59,6 +59,7 @@ main * {
     transition: all 300ms;
     cursor: pointer;
     user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .button {
