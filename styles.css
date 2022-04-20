@@ -30,20 +30,35 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
-        "r r r o";
+        "r r r r";
     padding: 1rem;
     grid-gap: 1rem;
     box-shadow: 0 0 40px var(--hoverColor);
 }
 
-#result {
+.heading {
     grid-area: r;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "res res res op";
+    width: 100%;
+    border: #004e86 solid 3px;
+    cursor: initial;
+    background-color: transparent;
+}
+
+.heading:hover {
+    background-color: inherit;
+}
+
+#result {
+    grid-area: res;
     background-color: transparent;
     cursor: initial;
 }
 
 #operator {
-    grid-area: o;
+    grid-area: op;
     background-color: transparent;
     cursor: initial;
     font-size: 1.5rem;
